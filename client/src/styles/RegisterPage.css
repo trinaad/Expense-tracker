@@ -1,0 +1,61 @@
+/* Define CSS variables for light and dark modes */
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --text-color-light: #333;
+}
+
+.register-page {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to right, #3498db, #2ecc71);
+}
+
+.register-form {
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 20px;
+  width: 30%;
+  border-radius: 10px; /* Add border radius for a softer look */
+}
+
+.register-form h2 {
+  margin-top: 10px;
+  text-align: center;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.register-form a {
+  color: var(--primary-color) !important;
+}
+
+.register-form a:hover {
+  color: var(--secondary-color) !important;
+}
+
+.register-form button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.register-form input:focus {
+  border: 1px solid var(--primary-color) !important;
+  color: var(--primary-color);
+}
+
+.register-form button:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Add space between Already Register? and Register button */
+.d-flex.justify-content-between {
+  margin-right: 10px; /* Adjust the margin as needed */
+}
